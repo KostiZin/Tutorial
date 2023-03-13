@@ -52,3 +52,71 @@ pre::first-letter {
     font-size: 20px;
     color: #f44336;
 } */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #2a2a2a;
+}
+
+.text {
+    /* Setting the margin between the border and the element's content */
+    padding: 20px;
+
+    background-color: #fff;
+    border: 2px dashed #ce0f0f;
+}
+
+.outer-box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}
+
+.inner-box {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    background-color: palevioletred;
+}
+
+.box {
+    /* Встановить стилі верхньої рамки */
+    border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: blue;
+
+    /* Встановить стилі правої рамки */
+    border-right-width: 5px;
+    border-right-style: dotted;
+    border-right-color: black;
+
+    /* Встановить стилі нижньої рамки */
+    border-bottom-width: 7px;
+    border-bottom-style: dashed;
+    border-bottom-color: palevioletred;
+
+    /* Встановить стилі лівої рамки */
+    border-left-width: 9px;
+    border-left-style: dashed;
+    border-left-color: green;
+
+    margin-right: auto;
+}
+
+.pane {
+    display: none;
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.is-active {
+    display: block;
+}
